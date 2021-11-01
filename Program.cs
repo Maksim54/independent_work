@@ -31,37 +31,55 @@ namespace Repitition_Lagunovski
             //
             /*-----------------------------------------------------------------------------------------------------------------------------*/
             //
-            /*task 2 from exercise 6*/
+            /*task 1 from exercise 6*/
             /*Задано пять произвольных целых чисел (элементы массива).
             Определить, является ли их расположение в массиве упорядоченным (т.е. по возрастанию или по убыванию) или неупорядоченным.*/
             //
-            static bool proizvoljnoe(int[] mass, bool ask)
-            {
-                for (int i = 0; i < mass.Length - 1; i++)
-                    if ((ask && (mass[i] > mass[i + 1])) || (!ask && (mass[i] < mass[i + 1]))) return false;
-                return true;
-            }
-            //
-            static void checking(int[] massiv)
-            {
-                if (proizvoljnoe(massiv, true))
-                {
-                    Console.WriteLine("In ascending order");//в порядке возрастания
-                }
-                else if (proizvoljnoe(massiv, false))
-                {
-                    Console.WriteLine("In descending order");//В порядке убывания
-                }
-                else
-                {
-                    Console.WriteLine("Not ordered");//Неупорядочено
-                }
-            }
             Console.WriteLine("--Task 1--");
-            var massiv = new[] { 5, 0, 3, 2, 1 };
-            checking(massiv);
-            Console.ReadLine();
+            int[] v = new int[] { 1, 2, 3, 4, 5 };
+            bool d;
+            Console.WriteLine("in ascending order: {0}", d = v.SequenceEqual(v.OrderBy(x => x)));/*Определяет, равны ли две последовательности, 
+            сравнивая элементы с помощью средства сравнения равенства по умолчанию для их типа.*/
             //
+            Console.WriteLine("Descending order: {0}", d |= v.SequenceEqual(v.OrderByDescending(x => x)));/*Сортирует элементы последовательности 
+            в порядке убывания в соответствии с ключом.*/
+            //
+            Console.WriteLine("Out of order: {0}", !d);
+            Console.WriteLine("");
+            //
+
+
+
+
+            //
+            /*----------------------------------------------------------------------------------------------------------------------------*/
+            // static bool proizvoljnoe(int[] mass, bool ask)//проверяет как идут цифры,по возрастанию или по убыванию                    //
+            // {                                                                                                                          //
+            //     for (int i = 0; i < mass.Length - 1; i++)//Общее количество элементов во всех измерениях массива ноль                  //
+            //         if ((ask && (mass[i] > mass[i + 1])) || (!ask && (mass[i] < mass[i + 1]))) return false;                           //
+            //     return true;                                                                                                           //
+            // }                                                                                                                          //
+            //                                                                                                                            //
+            // static void checking(int[] massiv)                                                                                         //
+            // {                                                                                                                          //
+            //     if (proizvoljnoe(massiv, true))                                                                                        //
+            //     {                                                                                                                      //
+            //         Console.WriteLine("In ascending order");//в порядке возрастания                                                    //
+            //     }                                                                                                                      //
+            //     else if (proizvoljnoe(massiv, false))                                                                                  //
+            //     {                                                                                                                      //
+            //         Console.WriteLine("In descending order");//В порядке убывания                                                      //
+            //     }                                                                                                                      //
+            //     else                                                                                                                   //
+            //     {                                                                                                                      //
+            //         Console.WriteLine("Not ordered");//Неупорядочено                                                                   //
+            //     }                                                                                                                      //
+            // }                                                                                                                          //
+            // Console.WriteLine("--Task 1--");                                                                                           //
+            // var massiv = new[] { 5, 0, 3, 2, 1 };                                                                                      //
+            // checking(massiv);                                                                                                          //
+            // Console.ReadLine();                                                                                                        //
+            //                                                                                                                            //
             /*-----------------------------------------------------------------------------------------------------------------------------*/
             /*task 3 from exercise 6*/
             //
@@ -116,7 +134,7 @@ namespace Repitition_Lagunovski
                 }
                 else
                 {
-                    Console.WriteLine(Mfull_name[counting1] + "People who are at least 18 years of age have the right to vote.");
+                    Console.WriteLine(Mfull_name[counting1] + " People who are at least 18 years of age have the right to vote.");
                 }
                 counting1++;
                 //
