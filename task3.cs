@@ -24,13 +24,13 @@ namespace Repitition_Lagunovski
             //фамилия,имя,отчество
             string[] Mfull_name =
             {
-                "Isaev Yaroslav Egorovich", "Morozova Zlata Timurovna", "Bogdanova Daria Ivanovna", "Vasilyeva Lyubov Valerievna"
+                "Isaev Yaroslav Egorovich -", "Morozova Zlata Timurovna -", "Bogdanova Daria Ivanovna -", "Vasilyeva Lyubov Valerievna -"
             };
             //
             //номер улицы
             string[] Madress =
             {
-                "1130 Small Street", "3620 Hanover Street", "4313 Jarvisville Road", "2770 Fieldcrest Road"
+                "- 1130 Small Street", "- 3620 Hanover Street", "- 4313 Jarvisville Road", "- 2770 Fieldcrest Road"
             };
             //
             //день,месяц и год рождения каждого из людей введенных в списке
@@ -59,7 +59,7 @@ namespace Repitition_Lagunovski
                 if (Myear[counting] < 2003)
                 {
                     Array.Sort(Madress, Mfull_name);
-                    Console.WriteLine(Madress[counting] + "/" + Mfull_name[counting]);
+                    Console.WriteLine(Madress[counting] + " - / - " + Mfull_name[counting]);
                 }
                 else
                 {

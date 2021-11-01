@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Repitition_Lagunovski.task2</StartupObject>
+    <StartupObject>Repitition_Lagunovski.task3</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
