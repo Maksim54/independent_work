@@ -15,6 +15,7 @@ namespace Repitition_Lagunovski
         {
             Random rnd = new Random();
             //
+            Console.WriteLine("--Task 2--");
             Console.Write("N = ");
             var N = int.Parse(Console.ReadLine()); //создается целочисленная переменная N
             var number = new int[N];
@@ -28,6 +29,38 @@ namespace Repitition_Lagunovski
             Console.WriteLine($"Count {counting}");//выдаёт нам количество элементов, значения которых находятся вне диапазона от -10 до +10.
             Console.ReadLine();
             //
+            /*-----------------------------------------------------------------------------------------------------------------------------*/
+            //
+            /*task 2 from exercise 6*/
+            /*Задано пять произвольных целых чисел (элементы массива).
+            Определить, является ли их расположение в массиве упорядоченным (т.е. по возрастанию или по убыванию) или неупорядоченным.*/
+            //
+            static bool proizvoljnoe(int[] mass, bool ask)
+            {
+                for (int i = 0; i < mass.Length - 1; i++)
+                    if ((ask && (mass[i] > mass[i + 1])) || (!ask && (mass[i] < mass[i + 1]))) return false;
+                return true;
+            }
+            //
+            static void checking(int[] massiv)
+            {
+                if (proizvoljnoe(massiv, true))
+                {
+                    Console.WriteLine("In ascending order");//в порядке возрастания
+                }
+                else if (proizvoljnoe(massiv, false))
+                {
+                    Console.WriteLine("In descending order");//В порядке убывания
+                }
+                else
+                {
+                    Console.WriteLine("Not ordered");//Неупорядочено
+                }
+            }
+            Console.WriteLine("--Task 1--");
+            var massiv = new[] { 5, 0, 3, 2, 1 };
+            checking(massiv);
+            Console.ReadLine();
             //
             /*task 3 from exercise 6*/
             //
@@ -40,6 +73,7 @@ namespace Repitition_Lagunovski
             Примечание: Правом участия в выборах обладают люди не моложе 18 лет.*/
             //
             //фамилия,имя,отчество
+            Console.WriteLine("--Task 3--");
             string[] Mfull_name =
             {
                 "Isaev Yaroslav Egorovich -", "Morozova Zlata Timurovna -", "Bogdanova Daria Ivanovna -", "Vasilyeva Lyubov Valerievna -"
@@ -48,7 +82,7 @@ namespace Repitition_Lagunovski
             //номер улицы
             string[] Madress =
             {
-                "- 1130 Small Street", "- 3620 Hanover Street", "- 4313 Jarvisville Road", "- 2770 Fieldcrest Road"
+                 "- 3620 Hanover Street","- 4313 Jarvisville Road","- 1130 Small Street","- 2770 Fieldcrest Road"
             };
             //
             //день,месяц и год рождения каждого из людей введенных в списке
