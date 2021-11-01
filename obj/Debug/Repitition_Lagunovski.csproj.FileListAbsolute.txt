@@ -1,0 +1,7 @@
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\obj\Debug\Repitition_Lagunovski.csprojAssemblyReference.cache
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\obj\Debug\Repitition_Lagunovski.csproj.CoreCompileInputs.cache
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\bin\Debug\Repitition_Lagunovski.exe.config
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\bin\Debug\Repitition_Lagunovski.exe
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\bin\Debug\Repitition_Lagunovski.pdb
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\obj\Debug\Repitition_Lagunovski.exe
+C:\Users\opilane\source\repos\Repitition_Lagunovski\Repitition_Lagunovski\obj\Debug\Repitition_Lagunovski.pdb
