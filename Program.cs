@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Repitition_Lagunovski
 {
-    class Program
+    internal class ProgramBase
     {
+        //private static object random;
+
         /*task 2 from exercise 6*/
         /* Задан массив действительных чисел из N элементов (используйте генератор случайных чисел).
         Определить количество элементов, значения которых находятся вне диапазона от -10 до +10.*/
@@ -35,7 +37,10 @@ namespace Repitition_Lagunovski
             /*Задано пять произвольных целых чисел (элементы массива).
             Определить, является ли их расположение в массиве упорядоченным (т.е. по возрастанию или по убыванию) или неупорядоченным.*/
             //
+            //Random ranndom = new Random();
+            //
             Console.WriteLine("--Task 1--");
+            //int x = rnd.Next();
             int[] v = new int[] { 1, 2, 3, 4, 5 };
             bool d;
             Console.WriteLine("in ascending order: {0}", d = v.SequenceEqual(v.OrderBy(x => x)));/*Определяет, равны ли две последовательности, 
@@ -44,6 +49,7 @@ namespace Repitition_Lagunovski
             Console.WriteLine("Descending order: {0}", d |= v.SequenceEqual(v.OrderByDescending(x => x)));/*Сортирует элементы последовательности 
             в порядке убывания в соответствии с ключом.*/
             //
+            //Console.WriteLine(GetRandom());
             Console.WriteLine("Out of order: {0}", !d);
             Console.WriteLine("");
             //
@@ -141,5 +147,10 @@ namespace Repitition_Lagunovski
             }
             Console.ReadLine();
         }
+
+        //private static bool GetRandom()
+        //{
+        //   throw new NotImplementedException();
+        // }
     }
 }
