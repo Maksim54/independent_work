@@ -124,9 +124,6 @@ namespace Repitition_Lagunovski
                 03, 12, 07, 25
             };
             //
-            int a = Myear[0];
-            int b = Myear[1];
-            int c = Myear[2];
             int counting1 = 0;
             //
             //Добавляем примечание тому человеку,который родился позже 2003 года
